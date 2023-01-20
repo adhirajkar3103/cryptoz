@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/cryptoz/static/js/main.bd4fceb6.js",
+    "static/media/spinner.gif": "/cryptoz/static/media/spinner.f6f96847de3e5d0fbbe6.gif",
+    "index.html": "/cryptoz/index.html",
+    "main.bd4fceb6.js.map": "/cryptoz/static/js/main.bd4fceb6.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bd4fceb6.js"
+  ]
+}
