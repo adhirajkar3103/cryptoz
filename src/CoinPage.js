@@ -3,15 +3,13 @@ import { useState , useEffect } from "react";
 import Axios from 'axios'
 import Coin from "./Coin";
 import Spinner from "./Spinner";
+
 const CoinPage = () => {
   const { id } = useParams();
   const [coin , setCoin] = useState({})
   const [loading,setLoading] = useState(false)
+  
   useEffect(()=>{
-    Axios.get(`https://api.coinstats.app/public/v1/charts?period=1m&coinId=${id}`)
-    .then((res)=>{
-      console.log(res.data)
-    })
     
     Axios.get(`https://api.coinstats.app/public/v1/coins/${id}?currency=USD`)
     .then((res)=>{
@@ -22,9 +20,12 @@ const CoinPage = () => {
       console.log(err)
     })
   },[id])
+
+
   return(<>
     {
-      loading ? <Coin coin={coin} />:<Spinner />
+      loading ? (<Coin coin={coin} />
+      ):<Spinner />
     }
     </>)
 

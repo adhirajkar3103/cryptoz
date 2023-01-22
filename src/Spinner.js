@@ -1,12 +1,11 @@
 import React from "react";
-import spinnerImg from './spinner.gif'
+
 const Spinner = () => {
-  return (
-    <div className="d-flex justify-content-center
-    ">
-        <img src={spinnerImg} alt="" />
-    </div>
-  );
+  return (<div className="container mt-5">
+    <span class="placeholder col-6"></span>
+<span class="placeholder w-75"></span>
+<span class="placeholder w-75"></span>
+</div>);
 };
 
 export default Spinner;

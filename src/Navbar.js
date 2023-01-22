@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
         <Link className="nav-link active" aria-current="page" to="/">Coins</Link>
-        <Link className="nav-link" to="#">NFTs</Link>
+        <Link className="nav-link" to="/nft">NFTs</Link>
       </div>
     </div>
   </div>
