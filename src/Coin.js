@@ -17,9 +17,9 @@ const Coin = (props) => {
   //   </>)
 
   return(<div className="d-flex justify-content-center">
-    <div class="card mt-5" style={{width: '80vw'}}>
-  <div class="card-body d-flex align-items-center justify-content-evenly">
-  <img src={props.coin.icon} alt="" width="80px" />
+    <div class="card mt-5" style={{width: '60vw'}}>
+  <div class="card-body d-flex flex-column align-items-center justify-content-evenly">
+  <img src={props.coin.icon} alt="" width="80px" className='my-1' />
     <h5 class="card-title">{props.coin.symbol}</h5>
     <h5 class="card-subtitle mb-2 text-muted">{props.coin.name}</h5>
     <p class="card-text">${parseFloat(props.coin.price).toFixed(4)}</p>
