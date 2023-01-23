@@ -3,7 +3,7 @@ import CoinListItem from './CoinListItem'
 
 const Home = (props) => {
   return (<>
-    <div className='container w-25 my-3'>
+    <div className='container w-50 my-3'>
         <label htmlFor="coinSearch" className='d-flex justify-content-center mb-1'>Search coins</label>
           <input className="form-control" type='text' id='coinSearch'  placeholder='Bitcoin...' onChange={(e)=>props.setSearchedWord(e.target.value)} />
     </div>
